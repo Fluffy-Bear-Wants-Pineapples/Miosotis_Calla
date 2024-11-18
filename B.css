@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/*== RESET(*) CSS ==*/
+* {
+	padding: 0;
+	margin: 0;
+	border: none;
+	border-box: none;
+}
+/*-------------*/
+
+
+/*== VARIÁVEIS(:root) CSS ==*/
+:root {
+	--branco: #FFFFFF;
+	--título: #9ca1ab;
+	--subtítulo: #abb4c2;
+	--texto: #cad0db;
+	--sombra: #3e4b63;
+	--azul-mais-claro: #687c9f;
+	--azul-claro: #4b5870;
+	--azul-escuro-claro: #1f2542;
+	--azul-escuro: #0d152e;
+}
+/*-------------*/
+
+
+html {
+	background-color: var(--azul-claro);
+	font-family: "PT Serif", serif;
+	text-shadow: 3px 3px 2px var(--sombra);
+}
+
+
+/*== CABEÇALHO ==*/
+.Cabeçalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0d152e;
+    padding: 1.5rem;
+}
+
+.Logo img {
+    width: 70%;
+    max-width: 70%;
+    object-fit: contain;
+}
+
+.Links ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin-right: 1rem;
+}
+
+.Links a {
+    text-decoration: none;
+    color: var(--subtítulo);
+    font-size: 2rem;
+    transition: color 0.3s ease;
+}
+
+.Links a:hover {
+    color: var(--branco);
+    font-style: italic;
+}
+/*-------------*/
+
+
+/*== TÍTULO PRINCIPAL ==*/
+.Título_Principal {
+	text-align: center;
+	color: var(--branco);
+	font-size: 4em;
+	font-family: "Alex Brush", serif;
+	margin: 3rem 0 0 0;
+}
+/*-------------*/
+
+
+/*== DIVISOR ==*/
+.Divisor img {
+	display: block;
+	margin: auto;
+	width: 45%;
+	max-width: 45%;
+}
+/*-------------*/
+
+
+/*== CARDÁPIOS ==*/
+.Título {
+	text-align: center;
+	color: var(--texto);
+	font-size: 3em;
+	font-family: "Alex Brush", serif;
+	margin: 7rem 0 0 0;
+	font-style: italic;
+}
+
+.Exibição {
+	display: flex;
+    gap: 8rem;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.Cardápio_Texto {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.Cardápio_Texto img {
+	height: 100%;
+    width: auto;
+    object-fit: contain;
+    margin: 2rem 0 0 0;
+}
+
+.Exibição_Final img {
+	height: 40%;
+	max-height: 40%; 
+	display: block; 
+	margin: 3rem auto 0 auto;
+}
+
+.Texto {
+	text-align: center;
+	color: var(--texto);
+	font-size: 1.5em;
+	font-family: "PT Serif", serif;
+	margin: 1.5rem;
+}
+
+.Span {
+	color: var(--azul-escuro);
+	font-weight: bold;
+}
+
+.Seções {
+	margin: 0 10rem 7rem 10rem;
+	padding: 4rem;
+	background-color: var(--sombra);
+	border-radius: 250px;
+	border: solid var(--azul-escuro-claro);
+	border-width: 0 0 20px 0;
+}
+/*-------------*/
+
+
+/*== RODAPÉ ==*/
+footer {
+	background-color: var(--azul-escuro);
+	color: var(--branco);
+	font-style: italic;
+	text-shadow: none;
+	text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    margin-top: 10%;
+}
+
+.Imagem {
+	width: 25%;
+	max-width: 25%;
+}
+
+.Licensa {
+	margin: 1rem;
+	width: 15%;
+	max-width: 15%;
+}
+
+footer h2, p {
+	line-height: 2rem;
+	font-size: 1em;
+}
+/*-------------*/

@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/*== RESET(*) CSS ==*/
+* {
+	padding: 0;
+	margin: 0;
+	border: none;
+	border-box: none;
+}
+/*-------------*/
+
+
+/*== VARIÁVEIS(:root) CSS ==*/
+:root {
+	--branco: #FFFFFF;
+	--título: #9ca1ab;
+	--subtítulo: #abb4c2;
+	--texto: #cad0db;
+	--sombra: #3e4b63;
+	--azul-mais-claro: #687c9f;
+	--azul-claro: #4b5870;
+	--azul-escuro-claro: #1f2542;
+	--azul-escuro: #0d152e;
+}
+/*-------------*/
+
+
+html {
+	background-color: var(--azul-claro);
+	font-family: "PT Serif", serif;
+	text-shadow: 3px 3px 2px var(--sombra);
+}
+
+
+/*== CABEÇALHO ==*/
+.Cabeçalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0d152e;
+    padding: 1.5rem;
+}
+
+.Logo img {
+    width: 70%;
+    max-width: 70%;
+    object-fit: contain;
+}
+
+.Links ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin-right: 1rem;
+}
+
+.Links a {
+    text-decoration: none;
+    color: var(--subtítulo);
+    font-size: 2rem;
+    transition: color 0.3s ease;
+}
+
+.Links a:hover {
+    color: var(--branco);
+    font-style: italic;
+}
+/*-------------*/
+
+
+/*== LOGO, DATA E SLOGAN (LDS) ==*/
+.LDS img, h2, p{
+	display: block;
+	margin: auto;
+	text-align: center;
+}
+
+.LDS img {
+	width: 35%;
+	max-width: 35%;
+}
+
+.LDS h2 {
+	font-family: "Alex Brush", serif;
+	color: var(--título);
+	font-size: 3em;
+}
+
+.LDS p {
+	color: var(--subtítulo);
+	font-size: 2.5em;
+}
+/*-------------*/
+
+
+/*== DIVISOR ==*/
+.Divisor img {
+	display: block;
+	margin: auto;
+	width: 60%;
+	max-width: 60%;
+}
+/*-------------*/
+
+
+/*== NOSSOS SERVIÇOS ==*/
+.Nossos_Serviços {
+	text-align: center;
+	color: var(--branco);
+	font-size: 2em;
+	font-family: "Alex Brush", serif;
+	margin: 1rem;
+}
+
+body .Elementos_Links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.Container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    margin: 2rem 0 10rem 0; 
+}
+
+.Seção {
+    position: relative;
+    width: 450px;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    overflow: hidden;
+    background-color: var(--azul-mais-claro);
+    box-shadow: 0 4px 10px var(--sombra);
+}
+
+.Seção img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50px;
+}
+
+.Seção:hover {
+	opacity: 90%;
+	box-shadow: 0 4px 10px var(--azul-escuro-claro);
+}
+/*-------------*/
+
+
+/*== RODAPÉ ==*/
+footer {
+	background-color: var(--azul-escuro);
+	color: var(--branco);
+	font-style: italic;
+	text-shadow: none;
+	text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.Imagem {
+	width: 25%;
+	max-width: 25%;
+}
+
+.Licensa {
+	margin: 1rem;
+	width: 15%;
+	max-width: 15%;
+}
+
+footer h2, p {
+	line-height: 2rem;
+	font-size: 1em;
+}
+/*-------------*/

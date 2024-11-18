@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/*== RESET(*) CSS ==*/
+* {
+	padding: 0;
+	margin: 0;
+	border: none;
+	border-box: none;
+}
+/*-------------*/
+
+
+/*== VARIÁVEIS(:root) CSS ==*/
+:root {
+	--branco: #FFFFFF;
+	--título: #9ca1ab;
+	--subtítulo: #abb4c2;
+	--texto: #cad0db;
+	--sombra: #3e4b63;
+	--azul-mais-claro: #687c9f;
+	--azul-claro: #4b5870;
+	--azul-escuro-claro: #1f2542;
+	--azul-escuro: #0d152e;
+
+	--vermelho: #ff6961;
+	--laranja: #ffb347;
+	--amarelo: #fdfd96;
+	--verde: #77dd77;
+	--azul: #aec6cf;
+	--roxo: #C3B1E1;
+	--rosa: #f9a7a7;
+	--prata: #C0C0C0;
+	--dourado: #d4af37;
+}
+/*-------------*/
+
+
+html {
+	background-color: var(--azul-claro);
+	font-family: "PT Serif", serif;
+	text-shadow: 3px 3px 2px var(--sombra);
+}
+
+
+/*== CABEÇALHO ==*/
+.Cabeçalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0d152e;
+    padding: 1.5rem;
+}
+
+.Logo img {
+    width: 70%;
+    max-width: 70%;
+    object-fit: contain;
+}
+
+.Links ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin-right: 1rem;
+}
+
+.Links a {
+    text-decoration: none;
+    color: var(--subtítulo);
+    font-size: 2rem;
+    transition: color 0.3s ease;
+}
+
+.Links a:hover {
+    color: var(--branco);
+    font-style: italic;
+}
+/*-------------*/
+
+
+/*== TÍTULO PRINCIPAL ==*/
+.Título_Principal {
+	text-align: center;
+	color: var(--branco);
+	font-size: 4em;
+	font-family: "Alex Brush", serif;
+	margin: 3rem 0 0 0;
+}
+/*-------------*/
+
+
+/*== DIVISOR ==*/
+.Divisor img {
+	display: block;
+	margin: auto;
+	width: 45%;
+	max-width: 45%;
+}
+/*-------------*/
+
+
+/*== DECORAÇÃO ==*/
+.Título {
+	text-align: center;
+	color: var(--texto);
+	font-size: 3em;
+	font-family: "Alex Brush", serif;
+	margin: 7rem 0 0 0;
+	font-style: italic;
+}
+
+.Decoração img {
+	max-width: 70%;
+	width: 70%;
+	display: block;
+	margin: 1rem auto 5rem auto;
+	opacity: 90%;
+}
+
+.Decoração img:hover {
+	opacity: 100%;
+	cursor: pointer;
+}
+
+.Seções {
+	margin: 0 10rem 7rem 10rem;
+	padding: 4rem;
+	background-color: var(--sombra);
+	border-radius: 250px;
+	border: solid var(--azul-escuro-claro);
+	border-width: 0 0 20px 0;
+}
+
+.Exibição img {
+	width: 55%;
+	max-width: 55%; 
+	display: block; 
+	margin: auto;
+}
+
+.Exibição_Final img {
+	width: 75%;
+	max-width: 75%; 
+	display: block; 
+	margin: auto;
+}
+
+.Texto {
+	text-align: center;
+	color: var(--texto);
+	font-size: 1.5em;
+	font-family: "PT Serif", serif;
+	margin: 1.5rem;
+}
+
+.Span {
+	font-size: 30px;
+	color: var(--azul-escuro);
+	font-weight: bold;
+}
+
+.Color_BRAN {
+	color: var(--branco);
+	font-weight: bold; 
+	text-transform: uppercase;
+	text-shadow: none;
+}
+
+.Color_PRAT {
+	color: var(--prata);
+	font-weight: bold; 
+	text-transform: uppercase;
+	text-shadow: none;
+}
+
+.Color_DOUR {
+	color: var(--dourado);
+	font-weight: bold; 
+	text-transform: uppercase;
+	text-shadow: none;
+}
+
+.Color_VERM {
+	color: var(--vermelho);
+	font-weight: bold; 
+	text-transform: uppercase;
+	text-shadow: none;
+}
+
+.Color_LARA {
+	color: var(--laranja);
+	font-weight: bold; 
+	text-transform: uppercase;
+	text-shadow: none;
+}
+
+.Color_AMAR {
+	color: var(--amarelo);
+	font-weight: bold; 
+	text-transform: uppercase;
+	text-shadow: none;
+}
+
+.Color_VERD {
+	color: var(--verde);
+	font-weight: bold; 
+	text-transform: uppercase;
+	text-shadow: none;
+}
+
+.Color_AZUL {
+	color: var(--azul);
+	font-weight: bold; 
+	text-transform: uppercase;
+	text-shadow: none;
+}
+
+.Color_ROXO {
+	color: var(--roxo);
+	font-weight: bold; 
+	text-transform: uppercase;
+	text-shadow: none;
+}
+
+.Color_ROSA {
+	color: var(--rosa);
+	font-weight: bold; 
+	text-transform: uppercase;
+	text-shadow: none;
+}
+/*-------------*/
+
+
+/*== RODAPÉ ==*/
+footer {
+	background-color: var(--azul-escuro);
+	color: var(--branco);
+	font-style: italic;
+	text-shadow: none;
+	text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    margin-top: 10%;
+}
+
+.Imagem {
+	width: 25%;
+	max-width: 25%;
+}
+
+.Licensa {
+	margin: 1rem;
+	width: 15%;
+	max-width: 15%;
+}
+
+footer h2, p {
+	line-height: 2rem;
+	font-size: 1em;
+}
+/*-------------*/
